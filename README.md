@@ -11,7 +11,7 @@ For running the application, please make sure to:
 
 
 ###### To start running  all containers in the background and leaves them running (in the folder "Larvel-Dev-Environment-With-Docker")
-<pre>docker-compose up -d <pre>
+<pre>docker-compose up -d </pre>
 
 ###### For Exemple, if we  want to run "Brwosersync" from the service "node"
 <pre>docker-compose exec node yarn watch</pre>
