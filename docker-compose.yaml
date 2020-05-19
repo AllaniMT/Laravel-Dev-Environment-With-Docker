@@ -20,6 +20,18 @@ services:
       - "MYSQL_ROOT_PASSWORD="
     ports:
       - "33061:3306"
+      
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      MYSQL_ROOT_PASSWORD: botbeh-wYbvow-sebwu9
+    ports:
+      - 8888:80
 
   php:
     image: php:7.4-fpm-alpine
